@@ -10,7 +10,11 @@
 </head>
 <body>
 <div id="vue-app">
-    <h1>{{ name }}</h1>
+    <h1>Data Binding</h1>
+
+    <button v-on:click="age++">Add a Year</button>
+    <button v-on:click="age--">Subtract a Year</button>
+    <p>My age is {{ age }}</p>
 </div>
 
 <script src="app.js"></script>
